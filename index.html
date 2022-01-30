@@ -100,7 +100,7 @@
           </h1>
           <p class="header__text">Узнайте о возможностях <span>кросс-функционального
               взаимодействия в коллективе</span></p>
-          <button class="header__btn">ПОДРОБНЕЕ</button>
+          <button class="header__btn" data-modal-button="modal-1">ПОДРОБНЕЕ</button>
         </div>
       </div>
     </div>
@@ -157,7 +157,7 @@
                 </div>
               </div>
             </div>
-            <button class="problem__btn">Пройти тест на недостатки взаимодействия<br>
+            <button class="problem__btn" data-modal-button="modal-1">Пройти тест на недостатки взаимодействия<br>
               между подразделениями</button>
           </div>
         </div>
@@ -249,7 +249,39 @@
       </section>
     </main>
   </div>
-
+  <div class="overlay hidden" data-modal id="modal-1">
+    <div class="modal modal__window">
+      <div class="modal__close" data-modal-close>
+        <img class="modal__close-img" src="images/close.png" alt="">
+      </div>
+      <form class="modal__form" action="#">
+        <label class="modal__form-label">
+          Ваше имя
+          <span>*</span>
+        </label>
+        <input class="modal__form-input" type="text" placeholder="Ваше имя">
+        <label class="modal__form-label">
+          Номер телефона
+          <span>*</span>
+        </label>
+        <input class="modal__form-input" type="tel:" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+        <label class="modal__form-label">
+          Ваш E-mail
+        </label>
+        <input class="modal__form-input" type="email" placeholder="Ваш E-mail">
+        <div class="modal__form-menu">
+          <select class="request__sale-select modal__form-select">
+            <option value="1">Программа:</option>
+            <option value="2">Super-jump</option>
+            <option value="3">Астрология</option>
+            <option value="4">Психология</option>
+            <option value="4">Кросс-функциональность</option>
+          </select>
+        </div>
+        <button class="modal__form-btn">Отправить</button>
+      </form>
+    </div>
+  </div>
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
